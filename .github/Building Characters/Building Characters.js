@@ -15,5 +15,5 @@ function setUpCanvas(){
 
 function draw()
 {
-    // background(225,0,0)
+
 }
