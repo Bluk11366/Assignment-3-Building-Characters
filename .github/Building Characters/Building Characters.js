@@ -3,6 +3,7 @@ var Canvas;
 var w = 400;
 var h = 400;
 var windowWidth = windowWidth;
+var windowHeight = windowHeight;
 
 setUpCanvas();
 setup();
