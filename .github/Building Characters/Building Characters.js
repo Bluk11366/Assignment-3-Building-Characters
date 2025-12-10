@@ -30,11 +30,12 @@ function setup(){
 	floor.h = 5;
 	floor.physics = STATIC;
 
-    Ceiling = new Sprite();
-	Ceiling.y = 0;
-	Ceiling.w = windowWidth;
-	Ceiling.h = 5;
-	Ceiling.physics = STATIC;
+    ceiling = new Sprite();
+	ceiling.y = 0;
+	ceiling.w = windowWidth;
+	ceiling.h = 5;
+	ceiling.physics = STATIC;
+
 }
 
 
