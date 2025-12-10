@@ -1,4 +1,5 @@
 var canvas;
+var Canvas;
 var w = 400;
 var h = 400;
 
