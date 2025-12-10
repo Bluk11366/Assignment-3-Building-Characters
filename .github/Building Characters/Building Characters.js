@@ -23,9 +23,9 @@ function setup(){
 	sprite.width = 50;
 	sprite.height = 50;
 
-    	floor = new Sprite();
+    floor = new Sprite();
 	floor.y = windowHeight;
-	floor.w = 238;
+	floor.w = windowWidth;
 	floor.h = 5;
 	floor.physics = STATIC;
 }
