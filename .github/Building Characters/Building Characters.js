@@ -18,3 +18,7 @@ function setup()
     new Canvas(windowWidth, windowHeight);
     world.gravity.y = 10;
 }
+
+function update() {
+	background('blue');
+}
