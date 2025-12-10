@@ -2,8 +2,8 @@ var canvas;
 var w = 400;
 var h = 400;
 
-
 setUpCanvas();
+setup();
 
 function setUpCanvas(){
     canvas = document.getElementById("canvas");
@@ -11,10 +11,10 @@ function setUpCanvas(){
     canvas.width = w;
     canvas.height = h;
     canvas.style.border = "4px solid purple";
-        world.gravity.y = 10;
 }
 
 function setup()
 {
-
+    new Canvas(windowWidth, windowHeight);
+    world.gravity.y = 10;
 }
