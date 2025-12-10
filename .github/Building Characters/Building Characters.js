@@ -14,12 +14,15 @@ function setUpCanvas(){
     canvas.style.border = "4px solid purple";
 }
 
-function setup()
-{
+function setup(){
     new Canvas(windowWidth, windowHeight);
     world.gravity.y = 10;
+
+    sprite = new Sprite();
+	sprite.width = 50;
+	sprite.height = 50;
 }
 
-function update() {
+function update(){
 	background('blue');
 }
