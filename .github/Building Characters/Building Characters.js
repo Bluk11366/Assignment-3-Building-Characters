@@ -5,7 +5,7 @@ var h = 400;
 setUpCanvas();
 
 function setup() {
-	new Canvas(250, 100);
+	new Canvas(w, h);
 }
 
 function update() {
