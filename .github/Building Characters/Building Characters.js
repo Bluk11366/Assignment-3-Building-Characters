@@ -29,7 +29,14 @@ function setup(){
 	floor.w = windowWidth;
 	floor.h = 5;
 	floor.physics = STATIC;
+
+    Ceiling = new Sprite();
+	Ceiling.y = 0;
+	Ceiling.w = windowWidth;
+	Ceiling.h = 5;
+	Ceiling.physics = STATIC;
 }
+
 
 function update(){
     clear();
