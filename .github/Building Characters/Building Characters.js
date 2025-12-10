@@ -16,6 +16,7 @@ function setUpCanvas(){
 
 function setup(){
     new Canvas(windowWidth, windowHeight);
+    background('black');
     world.gravity.y = 10;
 
     sprite = new Sprite();
@@ -30,6 +31,5 @@ function setup(){
 }
 
 function update(){
-	background('black');
     clear();
 }
