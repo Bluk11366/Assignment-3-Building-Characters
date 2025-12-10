@@ -22,7 +22,7 @@ function setup(){
     sprite = new Sprite();
 	sprite.width = 50;
 	sprite.height = 50;
-    sprite.image = "placeholder.gif"
+    sprite.addAni('walk','placeholder.gif');
 
     floor = new Sprite();
 	floor.y = windowHeight;
