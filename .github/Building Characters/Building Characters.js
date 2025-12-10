@@ -1,6 +1,6 @@
 var canvas;
-var w = 400;
-var h = 400;
+var w = width;
+var h = height;
 
 setUpCanvas();
 
