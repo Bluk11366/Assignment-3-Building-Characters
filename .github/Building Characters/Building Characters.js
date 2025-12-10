@@ -21,8 +21,15 @@ function setup(){
     sprite = new Sprite();
 	sprite.width = 50;
 	sprite.height = 50;
+
+    	floor = new Sprite();
+	floor.y = windowHeight;
+	floor.w = 238;
+	floor.h = 5;
+	floor.physics = STATIC;
 }
 
 function update(){
-	background('blue');
+	background('black');
+    clear();
 }
