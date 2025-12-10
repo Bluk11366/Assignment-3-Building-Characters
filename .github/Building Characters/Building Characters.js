@@ -4,6 +4,14 @@ var h = 400;
 
 setUpCanvas();
 
+function setup() {
+	new Canvas(250, 100);
+}
+
+function update() {
+	background('blue');
+}
+
 function setUpCanvas(){
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
