@@ -4,14 +4,6 @@ var h = 400;
 
 setUpCanvas();
 
-function setup() {
-	new Canvas(w, h);
-}
-
-function update() {
-	background('blue');
-}
-
 function setUpCanvas(){
     canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
@@ -19,7 +11,6 @@ function setUpCanvas(){
     canvas.height = h;
     canvas.style.border = "4px solid purple";
 }
-
 
 function draw()
 {
