@@ -19,7 +19,7 @@ function setUpCanvas(){
 function setup(){
     new Canvas(windowWidth, windowHeight);
     background('black');
-    world.gravity.y = 10;
+    // world.gravity.y = 10;
 
     sprite = new Sprite();
 	sprite.width = 50;
@@ -37,8 +37,13 @@ function setup(){
 	ceiling.w = windowWidth;
 	ceiling.h = 5;
 	ceiling.physics = STATIC;
-
 }
+
+function calculateHealth() {
+  health -= 5;
+  health = constrain(health, 0, 100);
+}
+
 
 
 function update(){
