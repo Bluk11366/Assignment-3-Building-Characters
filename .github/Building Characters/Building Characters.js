@@ -3,6 +3,7 @@ let point;
 let health = 100;
 let score = 0;
 
+
 function preload(){
     vitaAnim = loadImage('PsVita.gif');
 }
@@ -18,10 +19,11 @@ function setup(){
 }
 
 function draw(){
+        clear();
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
-    clear();
+
     
     background("black");
     let currentTime = int(millis()/1000);
