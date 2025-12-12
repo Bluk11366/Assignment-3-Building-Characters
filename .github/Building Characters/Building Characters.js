@@ -9,6 +9,7 @@
 
 function setup(){
     createCanvas(windowWidth, windowHeight);
+    frameRate(30);
     background(0);
     let currentTime = int(millis()/1000);
     textSize(24);
