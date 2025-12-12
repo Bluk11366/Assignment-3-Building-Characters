@@ -5,8 +5,15 @@ var h = 400;
 var windowWidth = windowWidth;
 var windowHeight = windowHeight;
 
+let sprite1
+
 setUpCanvas();
 setup();
+
+function preload(){
+    anim = loadAnimation()
+
+}
 
 function setUpCanvas(){
     canvas = document.getElementById("canvas");
@@ -17,7 +24,7 @@ function setUpCanvas(){
 }
 
 function setup(){
-    new Canvas(windowWidth, windowHeight);
+    createCanvas(windowWidth, windowHeight);
     background('black');
     // world.gravity.y = 10;
 
@@ -25,18 +32,6 @@ function setup(){
 	sprite.width = 50;
 	sprite.height = 50;
     // sprite.image = "";
-
-    // floor = new Sprite();
-	// floor.y = windowHeight;
-	// floor.w = windowWidth;
-	// floor.h = 5;
-	// floor.physics = STATIC;
-
-    // ceiling = new Sprite();
-	// ceiling.y = 0;
-	// ceiling.w = windowWidth;
-	// ceiling.h = 5;
-	// ceiling.physics = STATIC;
 }
 
 function calculateHealth() {
