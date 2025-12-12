@@ -12,7 +12,7 @@ function setup(){
     background(0);
     let currentTime = int(millis()/1000);
     textSize(24);
-    fill(0, 75, 153);
+    fill(125, 75, 153);
     text("Time:" + currentTime, 30, 380);
 }
 
