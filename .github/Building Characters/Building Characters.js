@@ -11,7 +11,7 @@ setUpCanvas();
 setup();
 
 function preload(){
-    anim = loadAnimation()
+    anim = loadAnimation(".github\Images\PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
 
 }
 
