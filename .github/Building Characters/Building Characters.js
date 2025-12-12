@@ -5,7 +5,7 @@ var h = 400;
 var windowWidth = windowWidth;
 var windowHeight = windowHeight;
 
-let sprite1
+let sprite1;
 
 setUpCanvas();
 setup();
@@ -24,7 +24,7 @@ function setUpCanvas(){
 }
 
 function setup(){
-    new canvas(windowWidth, windowHeight);
+    new Canvas(windowWidth, windowHeight);
     sprite1 = createSprite(windowWidth/2, windowHeight/2, 100, 100);
     sprite1.addAnimation("anim", anim);
 }
