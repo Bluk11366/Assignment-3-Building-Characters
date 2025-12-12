@@ -20,6 +20,7 @@ function draw(){
 }
 
 function draw2(){
+        background("black");
     let currentTime = int(millis()/1000);
     textSize(24);
     fill(0, 75, 153);
