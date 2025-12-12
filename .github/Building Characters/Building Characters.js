@@ -21,7 +21,7 @@ function setup(){
     spriteGroup = new Group();
 }
 
-function draw(){
+function draw(spawnInterval){
     clear();
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
