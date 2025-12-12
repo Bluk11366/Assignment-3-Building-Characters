@@ -1,5 +1,5 @@
 function preload(){
-    anim = loadAnimation("C:\Repositories\Assignment-3-Building-Characters\.github\Images\PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
+    anim = loadAnimation("https://github.com/Bluk11366/Assignment-3-Building-Characters/blob/a6bc1bfc66e3b54cc2b9ddcffe57ffc5aa9a8273/.github/Images/PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
 }
 
 function calculateHealth() {
