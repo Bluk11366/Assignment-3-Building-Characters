@@ -17,6 +17,11 @@ function draw(){
     textSize(24);
     fill(0, 75, 300);
     text("Time:" + currentTime, 30, windowHeight-30);
+
+    clear();
+    if (mouse.pressing('left')){
+    vita.moveTo(mouse.x, mouse.y, 5);
+    }
 }
 
 function calculateHealth() {
