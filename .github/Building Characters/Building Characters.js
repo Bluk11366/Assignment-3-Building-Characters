@@ -24,7 +24,7 @@ function setUpCanvas(){
 }
 
 function setup(){
-    createCanvas(windowWidth, windowHeight);
+    new canvas(windowWidth, windowHeight);
     sprite1 = createSprite(windowWidth/2, windowHeight/2, 100, 100);
     sprite1.addAnimation("anim", anim);
 }
