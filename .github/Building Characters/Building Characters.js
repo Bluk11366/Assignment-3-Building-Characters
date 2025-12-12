@@ -1,4 +1,7 @@
 let vita;
+let point;
+let health = 100;
+let score = 0;
 
 function preload(){
     vitaAnim = loadImage('PsVita.gif');
@@ -9,6 +12,9 @@ function setup(){
     frameRate(30);
     vita = createSprite(windowWidth/2, windowHeight/2);
     vita.addAnimation("vita", vitaAnim)
+
+    point = createsprite(50, 50, 30, 30);
+    point.shapeColor = "yellow";
 }
 
 function draw(){
