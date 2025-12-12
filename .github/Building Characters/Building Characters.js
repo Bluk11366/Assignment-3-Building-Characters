@@ -1,5 +1,5 @@
 function preload(){
-    anim = loadImage('.github\Building Characters\PsVita.gif');
+    anim = loadImage('PsVita.gif');
 }
 
 function calculateHealth() {
