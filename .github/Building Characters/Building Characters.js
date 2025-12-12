@@ -40,12 +40,12 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function spawnRandomSprite(){
+function spawnRandomSprite(point){
     let x = random(width);
     let y = random(height);
-    let newSprite = new spritesGroup.Sprite(x, y, 30);
-    newSprite.color = "yellow";
-    newSprite.life = 300;
+    let point = new spritesGroup.Sprite(x, y, 30);
+    point.color = "yellow";
+    point.life = 300;
 }
 
 function calculateHealth() {
