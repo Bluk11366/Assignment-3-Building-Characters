@@ -17,7 +17,9 @@ function draw(){
     strokeWeight(40);
     stroke("orange");
     point(mouseX, mouseY);
+}
 
+function draw2(){
     let currentTime = int(millis()/1000);
     textSize(24);
     fill(0, 75, 153);
