@@ -10,11 +10,6 @@
 function setup(){
     createCanvas(windowWidth, windowHeight);
     frameRate(30);
-    background(0);
-    let currentTime = int(millis()/1000);
-    textSize(24);
-    fill(0, 75, 153);
-    text("Time:" + currentTime, 30, 380);
 }
 
 function draw(){
@@ -22,4 +17,9 @@ function draw(){
     strokeWeight(40);
     stroke("orange");
     point(mouseX, mouseY);
+
+    let currentTime = int(millis()/1000);
+    textSize(24);
+    fill(0, 75, 153);
+    text("Time:" + currentTime, 30, 380);
 }
