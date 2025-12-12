@@ -44,6 +44,7 @@ function spawnRandomSprite(){
     let x = random(width);
     let y = random(height);
     let newSprite = new spritesGroup.Sprite(x, y, 30);
+    newSprite.color = "yellow";
     newSprite.life = 300;
 }
 
