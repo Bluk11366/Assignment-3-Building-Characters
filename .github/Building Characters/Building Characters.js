@@ -26,17 +26,17 @@ function setup(){
 	sprite.height = 50;
     // sprite.image = "";
 
-    floor = new Sprite();
-	floor.y = windowHeight;
-	floor.w = windowWidth;
-	floor.h = 5;
-	floor.physics = STATIC;
+    // floor = new Sprite();
+	// floor.y = windowHeight;
+	// floor.w = windowWidth;
+	// floor.h = 5;
+	// floor.physics = STATIC;
 
-    ceiling = new Sprite();
-	ceiling.y = 0;
-	ceiling.w = windowWidth;
-	ceiling.h = 5;
-	ceiling.physics = STATIC;
+    // ceiling = new Sprite();
+	// ceiling.y = 0;
+	// ceiling.w = windowWidth;
+	// ceiling.h = 5;
+	// ceiling.physics = STATIC;
 }
 
 function calculateHealth() {
