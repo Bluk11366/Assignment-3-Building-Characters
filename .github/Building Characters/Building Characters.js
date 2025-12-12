@@ -1,5 +1,5 @@
 function preload(){
-    anim = loadAnimation("Images\PsVita1.png", "Images\PsVita2.png", "Images\PsVita3.png");
+    anim = loadAnimation(".github\Images\PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
 }
 
 function calculateHealth() {
