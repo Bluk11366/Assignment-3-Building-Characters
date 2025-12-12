@@ -13,7 +13,7 @@ function setup(){
 
 function draw(){
     if (mouse.pressing('left')){
-    vita.moveTo(mouse.x, mouse.y, 5);
+    vita.moveTo(mouse.x, mouse.y, 8);
     }
     clear();
     
