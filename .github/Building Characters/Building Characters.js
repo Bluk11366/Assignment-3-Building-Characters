@@ -25,13 +25,8 @@ function setUpCanvas(){
 
 function setup(){
     createCanvas(windowWidth, windowHeight);
-    background('black');
-    // world.gravity.y = 10;
-
-    sprite = new Sprite();
-	sprite.width = 50;
-	sprite.height = 50;
-    // sprite.image = "";
+    sprite1 = createSprite(windowWidth/2, windowHeight/2, 100, 100);
+ 
 }
 
 function calculateHealth() {
