@@ -30,6 +30,7 @@ function draw(){
     if (frameCount % spawnInterval === 0) {
     spawnRandomSprite();
     spawnInterval = random(30, 90);
+}
     
     background("black");
     let currentTime = int(millis()/1000);
