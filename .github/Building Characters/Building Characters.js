@@ -13,7 +13,7 @@ function setup(){
     vita = createSprite(windowWidth/2, windowHeight/2);
     vita.addAnimation("vita", vitaAnim)
 
-    point = createSprite(50, 50, 30, 30);
+    point = createSprite(150, 150, 30, 30);
     point.shapeColor = "yellow";
 }
 
