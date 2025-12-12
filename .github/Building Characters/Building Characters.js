@@ -1,5 +1,5 @@
 function preload(){
-    anim = loadAni('PsVita.gif');
+    anim = loadAni('.github\Building Characters\PsVita.gif');
 }
 
 function calculateHealth() {
