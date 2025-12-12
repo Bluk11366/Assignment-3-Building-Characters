@@ -30,7 +30,7 @@ function draw(spawnInterval){
 
     if (frameCount % spawnInterval === 0) {
     spawnRandomSprite();
-    spawnInterval = random(30, 90);
+    // spawnInterval = random(30, 90);
 }
     
     background("black");
