@@ -11,7 +11,7 @@ setUpCanvas();
 setup();
 
 function preload(){
-    anim = loadAnimation(".github\Images\PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
+    anim = loadAnimation("Images\PsVita1.png", ".github\Images\PsVita2.png", ".github\Images\PsVita3.png");
 
 }
 
@@ -26,7 +26,12 @@ function setUpCanvas(){
 function setup(){
     createCanvas(windowWidth, windowHeight);
     sprite1 = createSprite(windowWidth/2, windowHeight/2, 100, 100);
- 
+    sprite1.addAnimation("anim", anim);
+}
+
+function draw(){
+    background(100);
+
 }
 
 function calculateHealth() {
