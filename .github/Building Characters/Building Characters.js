@@ -7,7 +7,7 @@ function preload(){
 function setup(){
     createCanvas(windowWidth, windowHeight);
     frameRate(30);
-    vita = createSprite(windowWidth/2, windowHeight/2, 0.70, 0.70);
+    vita = createSprite(windowWidth/2, windowHeight/2);
     vita.addAnimation("vita", vitaAnim)
 }
 
