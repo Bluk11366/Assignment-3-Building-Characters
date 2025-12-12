@@ -14,7 +14,7 @@ function setup(){
     frameRate(30);
     vita = createSprite(windowWidth/2, windowHeight/2);
     vita.addAnimation("vita", vitaAnim)
-    player.animation.stop();
+    vita.animation.stop();
 
     // point = createSprite(150, 150, 30, 30);
     // point.shapeColor = "yellow";
