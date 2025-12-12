@@ -29,7 +29,7 @@ function draw(spawnInterval){
     }
 
     if (frameCount % spawnInterval === 0) {
-    spawnRandomSprite();
+    spawnRandomSprite(point);
     // spawnInterval = random(30, 90);
 }
     
