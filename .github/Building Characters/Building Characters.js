@@ -17,5 +17,5 @@ function draw(){
     let currentTime = int(millis()/1000);
     textSize(24);
     fill(0, 75, 300);
-    text("Time:" + currentTime, 30, 500);
+    text("Time:" + currentTime, 30, windowHeight-50);
 }
