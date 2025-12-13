@@ -1,5 +1,5 @@
 let vita;
-let points;
+// let points;
 let health = 100;
 let score = 0;
 let spriteGroup;
