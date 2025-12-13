@@ -31,6 +31,10 @@ function setup(){
     new walls.Sprite(width, height / 2, 30, height, 'static');
 }
 
+function incrementCount(vita, points) {
+  score++;
+}
+
 // function onCollision(vita, point){
 //     point.remove();
 //     respawnSprite(point);
@@ -49,6 +53,10 @@ function draw(spawnInterval){
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
+
+     vita.collides(points, 1);
+     textSize(20);
+     text("Collisions: " + collisionCount, 10, 30);
 
     if (frameCount % spawnInterval === 0) {
     spawnRandomPoint();
