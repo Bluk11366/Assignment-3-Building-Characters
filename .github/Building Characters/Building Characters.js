@@ -19,7 +19,7 @@ function setup(){
 
     point = createSprite(random(windowWidth), random(windowHeight), 30, 30);
     point.shapeColor = "yellow";
-    point.bounciness = 0.8;
+    // point.bounciness = 0.8;
 
     spriteGroup = new Group();
     walls = new Group();
