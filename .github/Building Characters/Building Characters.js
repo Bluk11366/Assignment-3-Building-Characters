@@ -19,7 +19,7 @@ function setup(){
 
     point = createSprite(random(windowWidth), random(windowHeight), 30);
     point.shapeColor = "yellow";
-    point.bounciness = 0.8;
+    point.bounciness = 1;
 
     spriteGroup = new Group();
     walls = new Group();
@@ -29,10 +29,6 @@ function setup(){
     new walls.Sprite(width / 2, height, width, 30, 'static');
     new walls.Sprite(0, height / 2, 30, height, 'static');
     new walls.Sprite(width, height / 2, 30, height, 'static');
-}
-
-function incrementCount(vita, points) {
-  score++;
 }
 
 // function onCollision(vita, point){
@@ -53,10 +49,6 @@ function draw(spawnInterval){
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
-
-     vita.collides(points, 1);
-     textSize(20);
-     text("Collisions: " + collisionCount, 10, 30);
 
     if (frameCount % spawnInterval === 0) {
     spawnRandomPoint();
