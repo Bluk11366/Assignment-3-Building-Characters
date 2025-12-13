@@ -15,9 +15,9 @@ function setup(){
     frameRate(30);
     vita = createSprite(windowWidth/2, windowHeight/2);
     vita.addAnimation("vita", vitaAnim)
-    vita.rotation = 0;
+    vita.rotationLock = true;
 
-    point = createSprite(random(windowWidth), random(windowHeight), 150, 30, 30);
+    point = createSprite(random(windowWidth), random(windowHeight), 30, 30);
     point.shapeColor = "yellow";
 
     spriteGroup = new Group();
