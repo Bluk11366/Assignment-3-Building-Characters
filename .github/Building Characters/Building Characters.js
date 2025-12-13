@@ -28,7 +28,7 @@ function setup(){
     new walls.Sprite(width / 2, height, width, 30); // Bottom wall
     new walls.Sprite(0, height / 2, 30, height);    // Left wall
     new walls.Sprite(width, height / 2, 30, height);  // Right wall
-    wall.physics = 'static';
+    walls.physics = 'static';
 }
 
 function spawnRandomPoint(){
