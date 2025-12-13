@@ -54,6 +54,7 @@ function draw(spawnInterval){
     textSize(24);
     fill(0, 75, 300);
     text("Time:" + currentTime, 30, windowHeight-30);
+    drawSprites();
 }
 
 
