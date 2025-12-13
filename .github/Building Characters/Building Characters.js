@@ -23,13 +23,13 @@ function setup(){
 }
 
 function draw(spawnInterval){
-    clear();
+    // clear();
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
 
     if (frameCount % spawnInterval === 0) {
-    spawnRandomSprite();
+    spawnRandomPoint();
     // spawnInterval = random(30, 90);
 }
     
@@ -40,7 +40,7 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function spawnRandomSprite(){
+function spawnRandomPoint(){
     let x = random(windowWidthidth);
     let y = random(windowHeight);
     let point = new spritesGroup.Sprite(x, y, 30);
