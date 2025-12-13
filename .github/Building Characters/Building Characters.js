@@ -17,7 +17,7 @@ function setup(){
     vita.addAnimation("vita", vitaAnim)
     vita.rotation = 0;
 
-    point = createSprite(150, 150, 30, 30);
+    point = createSprite(random(windowWidth), random(windowHeight), 150, 30, 30);
     point.shapeColor = "yellow";
 
     spriteGroup = new Group();
