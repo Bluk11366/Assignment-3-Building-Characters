@@ -1,5 +1,5 @@
 let vita;
-let point;
+let points;
 let health = 100;
 let score = 0;
 let spriteGroup;
@@ -23,7 +23,7 @@ function setup(){
 }
 
 function draw(spawnInterval){
-    // clear();
+    clear();
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
@@ -40,12 +40,12 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function spawnRandomPoint(){
+function spawnRandomPoint(points){
     let x = random(windowWidthidth);
     let y = random(windowHeight);
-    let point = new spritesGroup.Sprite(x, y, 30);
-    point.color = "yellow";
-    point.life = 300;
+    let points = new spritesGroup.Sprite(x, y, 30);
+    points.color = "yellow";
+    points.life = 300;
 }
 
 function calculateHealth() {
