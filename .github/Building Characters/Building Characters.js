@@ -24,10 +24,10 @@ function setup(){
     walls = new Group();
     walls.visible = true;
 
-    new walls.Sprite(width / 2, 0, width, 30, static);    // Top wall
-    new walls.Sprite(width / 2, height, width, 30, static); // Bottom wall
-    new walls.Sprite(0, height / 2, 30, height, static);    // Left wall
-    new walls.Sprite(width, height / 2, 30, height, static);  // Right wall
+    new walls.Sprite(width / 2, 0, width, 30, 'static');    // Top wall
+    new walls.Sprite(width / 2, height, width, 30, 'static'); // Bottom wall
+    new walls.Sprite(0, height / 2, 30, height, 'static');    // Left wall
+    new walls.Sprite(width, height / 2, 30, height, 'static');  // Right wall
     walls.physics = 'static';
 }
 
