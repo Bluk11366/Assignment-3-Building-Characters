@@ -1,5 +1,5 @@
 let vita;
-// let points;
+let points;
 let walls
 let health = 100;
 let score = 0;
@@ -19,7 +19,7 @@ function setup(){
 
     point = createSprite(random(windowWidth), random(windowHeight), 30, 30);
     point.shapeColor = "yellow";
-    // point.bounciness = 0.8;
+    point.bounciness = 0.8;
 
     spriteGroup = new Group();
     walls = new Group();
@@ -29,6 +29,12 @@ function setup(){
     new walls.Sprite(width / 2, height, width, 30, 'static');
     new walls.Sprite(0, height / 2, 30, height, 'static');
     new walls.Sprite(width, height / 2, 30, height, 'static');
+}
+
+function onCollision(vita, point){
+    point.remove();
+    respawnSprite(point);
+}
 
 function spawnRandomPoint(){
     let x = random(windowWidth);
@@ -47,6 +53,8 @@ function draw(spawnInterval){
     if (frameCount % spawnInterval === 0) {
     spawnRandomPoint();
     spawnInterval = random(30, 90);
+    drawSprite();
+    player.collide(vita, points, onCollision);
 }
     
     background("black");
@@ -54,6 +62,12 @@ function draw(spawnInterval){
     textSize(24);
     fill(0, 75, 300);
     text("Time:" + currentTime, 30, windowHeight-30);
+}
+
+function respawnSprite(oldSprite) {
+  let newX = random(width);
+  let newY = random(height);
+  let newSprite = createSprite(newX, newY, 30, 30);
 }
 
 
