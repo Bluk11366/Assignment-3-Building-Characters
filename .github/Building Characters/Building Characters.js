@@ -22,7 +22,7 @@ function setup(){
 
     spriteGroup = new Group();
     walls = new Group();
-    walls.visible = false;
+    walls.visible = true;
 
     new walls.Sprite(width / 2, 0, width, 30);    // Top wall
     new walls.Sprite(width / 2, height, width, 30); // Bottom wall
