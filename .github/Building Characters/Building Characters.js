@@ -19,17 +19,16 @@ function setup(){
 
     point = createSprite(random(windowWidth), random(windowHeight), 30, 30);
     point.shapeColor = "yellow";
+    point.bounciness = 0.8;
 
     spriteGroup = new Group();
     walls = new Group();
     walls.visible = true;
 
-    new walls.Sprite(width / 2, 0, width, 30, 'static');    // Top wall
-    new walls.Sprite(width / 2, height, width, 30, 'static'); // Bottom wall
-    new walls.Sprite(0, height / 2, 30, height, 'static');    // Left wall
-    new walls.Sprite(width, height / 2, 30, height, 'static');  // Right wall
-    walls.physics = 'static';
-}
+    new walls.Sprite(width / 2, 0, width, 30, 'static');
+    new walls.Sprite(width / 2, height, width, 30, 'static');
+    new walls.Sprite(0, height / 2, 30, height, 'static');
+    new walls.Sprite(width, height / 2, 30, height, 'static');
 
 function spawnRandomPoint(){
     let x = random(windowWidth);
