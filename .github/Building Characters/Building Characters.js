@@ -31,18 +31,18 @@ function setup(){
     new walls.Sprite(width, height / 2, 30, height, 'static');
 }
 
-function onCollision(vita, point){
-    point.remove();
-    respawnSprite(point);
-}
+// function onCollision(vita, point){
+//     point.remove();
+//     respawnSprite(point);
+// }
 
-function spawnRandomPoint(){
-    let x = random(windowWidth);
-    let y = random(windowHeight);
-    let points = new spriteGroup.Sprite(x, y, 30);
-    points.color = "yellow";
-    points.life = 300;
-}
+// function spawnRandomPoint(){
+//     let x = random(windowWidth);
+//     let y = random(windowHeight);
+//     let points = new spriteGroup.Sprite(x, y, 30);
+//     points.color = "yellow";
+//     points.life = 300;
+// }
 
 function draw(spawnInterval){
     clear();
@@ -64,14 +64,14 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function respawnSprite(oldSprite) {
-  let newX = random(width);
-  let newY = random(height);
-  let newSprite = createSprite(newX, newY, 30, 30);
-}
+// function respawnSprite(oldSprite) {
+//   let newX = random(width);
+//   let newY = random(height);
+//   let newSprite = createSprite(newX, newY, 30, 30);
+// }
 
 
-function calculateHealth() {
-  health -= 5;
-  health = constrain(health, 0, 100);
-}
+// function calculateHealth() {
+//   health -= 5;
+//   health = constrain(health, 0, 100);
+// }
