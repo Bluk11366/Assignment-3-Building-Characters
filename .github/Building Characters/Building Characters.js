@@ -17,7 +17,7 @@ function setup(){
     vita.addAnimation("vita", vitaAnim)
     vita.rotationLock = true;
 
-    point = createSprite(random(windowWidth), random(windowHeight), 30;
+    point = createSprite(random(windowWidth), random(windowHeight), 30);
     point.shapeColor = "yellow";
     point.bounciness = 0.8;
 
