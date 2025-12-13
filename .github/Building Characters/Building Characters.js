@@ -16,8 +16,8 @@ function setup(){
     vita.addAnimation("vita", vitaAnim)
     vita.animation.stop();
 
-    // point = createSprite(150, 150, 30, 30);
-    // point.shapeColor = "yellow";
+    point = createSprite(150, 150, 30, 30);
+    point.shapeColor = "yellow";
 
     spriteGroup = new Group();
 }
