@@ -40,7 +40,7 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function spawnRandomPoint(points){
+function spawnRandomPoint(){
     let x = random(windowWidth);
     let y = random(windowHeight);
     let points = new spriteGroup.Sprite(x, y, 30);
