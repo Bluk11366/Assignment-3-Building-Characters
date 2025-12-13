@@ -1,5 +1,6 @@
 let vita;
 // let points;
+let walls
 let health = 100;
 let score = 0;
 let spriteGroup;
@@ -20,6 +21,13 @@ function setup(){
     point.shapeColor = "yellow";
 
     spriteGroup = new Group();
+    walls = new Group();
+    walls.visible = true;
+
+    new walls.Sprite(width / 2, 0, width, 30);    // Top wall
+    new walls.Sprite(width / 2, height, width, 30); // Bottom wall
+    new walls.Sprite(0, height / 2, 30, height);    // Left wall
+    new walls.Sprite(width, height / 2, 30, height);  // Right wall
 }
 
 function draw(spawnInterval){
