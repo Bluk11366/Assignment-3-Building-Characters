@@ -30,6 +30,14 @@ function setup(){
     new walls.Sprite(width, height / 2, 30, height);  // Right wall
 }
 
+function spawnRandomPoint(){
+    let x = random(windowWidth);
+    let y = random(windowHeight);
+    let points = new spriteGroup.Sprite(x, y, 30);
+    points.color = "yellow";
+    points.life = 300;
+}
+
 function draw(spawnInterval){
     clear();
     if (mouse.pressing('left')){
@@ -48,13 +56,6 @@ function draw(spawnInterval){
     text("Time:" + currentTime, 30, windowHeight-30);
 }
 
-function spawnRandomPoint(){
-    let x = random(windowWidth);
-    let y = random(windowHeight);
-    let points = new spriteGroup.Sprite(x, y, 30);
-    points.color = "yellow";
-    points.life = 300;
-}
 
 function calculateHealth() {
   health -= 5;
