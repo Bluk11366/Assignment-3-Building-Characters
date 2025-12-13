@@ -43,7 +43,7 @@ function draw(spawnInterval){
 function spawnRandomPoint(points){
     x = random(windowWidthidth);
     y = random(windowHeight);
-    points = new spritesGroup.Sprite(x, y, 30);
+    points = new spriteGroup.Sprite(x, y, 30);
     points.color = "yellow";
     points.life = 300;
 }
