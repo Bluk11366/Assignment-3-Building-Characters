@@ -22,14 +22,14 @@ function setup(){
     spriteGroup = new Group();
 }
 
-function draw(spawnInterval){
+function draw(){
     clear();
     if (mouse.pressing('left')){
     vita.moveTo(mouse.x, mouse.y, 8);
     }
 
     if (frameCount % spawnInterval === 0) {
-    spawnRandomSprite(point);
+    spawnRandomSprite();
     // spawnInterval = random(30, 90);
 }
     
@@ -41,8 +41,8 @@ function draw(spawnInterval){
 }
 
 function spawnRandomSprite(){
-    let x = random(width);
-    let y = random(height);
+    let x = random(windowWidthidth);
+    let y = random(windowHeight);
     let point = new spritesGroup.Sprite(x, y, 30);
     point.color = "yellow";
     point.life = 300;
